@@ -1,31 +1,31 @@
 {
-  "repository": "#",
-  "license": "UNLICENSED",
+  "name": "doom-portal-in-webgl",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "build": "webpack --config ./bundler/webpack.prod.js",
-    "dev": "webpack serve --config ./bundler/webpack.dev.js"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@babel/core": "^7.14.6",
-    "@babel/preset-env": "^7.14.7",
-    "babel-loader": "^8.2.2",
-    "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^9.0.1",
-    "css-loader": "^5.2.6",
-    "file-loader": "^6.2.0",
-    "glslify-loader": "^2.0.0",
-    "html-loader": "^2.1.2",
-    "html-webpack-plugin": "^5.3.2",
-    "mini-css-extract-plugin": "^2.1.0",
-    "portfinder-sync": "0.0.2",
-    "raw-loader": "^4.0.2",
-    "stats.js": "^0.17.0",
-    "style-loader": "^3.0.0",
-    "three": "^0.130.1",
-    "tweakpane": "^3.0.5",
-    "webpack": "^5.42.1",
-    "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2",
-    "webpack-merge": "^5.8.0"
+    "@react-three/drei": "^9.92.7",
+    "@react-three/fiber": "^8.15.12",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
   }
 }

@@ -11,13 +11,6 @@ body
     overflow: hidden;
 }
 
-.experience
-{
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-}
-
 .credits
 {
     position: absolute;
