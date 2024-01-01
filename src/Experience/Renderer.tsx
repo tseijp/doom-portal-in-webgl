@@ -10,7 +10,7 @@ export const Renderer = () => {
   return (
     <Effects>
       {/* @ts-ignore */}
-      <renderPass />
+      {/* <renderPass /> */}
       {/* @ts-ignore */}
       <unrealBloomPass />
     </Effects>
